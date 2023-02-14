@@ -1,0 +1,13 @@
+C:\Users\rikka\Documents\GitHub\valentinesdayrumia\rumia\rumia\bin\Release\rumia.exe.config
+C:\Users\rikka\Documents\GitHub\valentinesdayrumia\rumia\rumia\bin\Release\rumia.exe
+C:\Users\rikka\Documents\GitHub\valentinesdayrumia\rumia\rumia\bin\Release\rumia.pdb
+C:\Users\rikka\Documents\GitHub\valentinesdayrumia\rumia\rumia\bin\Release\rumia.xml
+C:\Users\rikka\Documents\GitHub\valentinesdayrumia\rumia\rumia\obj\Release\rumia.vbproj.AssemblyReference.cache
+C:\Users\rikka\Documents\GitHub\valentinesdayrumia\rumia\rumia\obj\Release\rumia.vbproj.SuggestedBindingRedirects.cache
+C:\Users\rikka\Documents\GitHub\valentinesdayrumia\rumia\rumia\obj\Release\rumia.Form1.resources
+C:\Users\rikka\Documents\GitHub\valentinesdayrumia\rumia\rumia\obj\Release\rumia.Resources.resources
+C:\Users\rikka\Documents\GitHub\valentinesdayrumia\rumia\rumia\obj\Release\rumia.vbproj.GenerateResource.cache
+C:\Users\rikka\Documents\GitHub\valentinesdayrumia\rumia\rumia\obj\Release\rumia.vbproj.CoreCompileInputs.cache
+C:\Users\rikka\Documents\GitHub\valentinesdayrumia\rumia\rumia\obj\Release\rumia.exe
+C:\Users\rikka\Documents\GitHub\valentinesdayrumia\rumia\rumia\obj\Release\rumia.xml
+C:\Users\rikka\Documents\GitHub\valentinesdayrumia\rumia\rumia\obj\Release\rumia.pdb
