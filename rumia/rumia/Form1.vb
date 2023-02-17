@@ -59,6 +59,52 @@ Public Class Form1
         End With
     End Sub
 
+    Private Sub RoundButton(btn As Button)
+        btn.FlatStyle = FlatStyle.Flat
+        btn.FlatAppearance.BorderSize = 0
+        btn.BackColor = Color.FromArgb(255, 140, 255)
+        btn.ForeColor = Color.Black
+        btn.Cursor = Cursors.Hand
+        btn.Font = New Font("Nirmala UI", 17)
+        Dim Raduis As New Drawing2D.GraphicsPath
+        Raduis.StartFigure()
+        Raduis.AddArc(New Rectangle(0, 0, 20, 20), 180, 90)
+        Raduis.AddLine(10, 0, btn.Width - 20, 0)
+        Raduis.AddArc(New Rectangle(btn.Width - 20, 0, 20, 20), -90, 90)
+        Raduis.AddLine(btn.Width, 20, btn.Width, btn.Height - 10)
+        Raduis.AddArc(New Rectangle(btn.Width - 25, btn.Height - 25, 25, 25), 0, 90)
+        Raduis.AddLine(btn.Width - 10, btn.Width, 20, btn.Height)
+        Raduis.AddArc(New Rectangle(0, btn.Height - 20, 20, 20), 90, 90)
+        Raduis.CloseFigure()
+        btn.Region = New Region(Raduis)
+    End Sub
+    Private Sub RoundButton2(btn As Button)
+
+        btn.FlatStyle = FlatStyle.Flat
+        btn.FlatAppearance.BorderSize = 0
+        btn.BackColor = Color.FromArgb(255, 140, 255)
+        btn.ForeColor = Color.Black
+        btn.Cursor = Cursors.Hand
+        btn.Font = New Font("Nirmala UI", 14)
+        Dim Raduis As New Drawing2D.GraphicsPath
+        Raduis.StartFigure()
+        Raduis.AddArc(New Rectangle(0, 0, 20, 20), 180, 90)
+        Raduis.AddLine(10, 0, btn.Width - 20, 0)
+        Raduis.AddArc(New Rectangle(btn.Width - 20, 0, 20, 20), -90, 90)
+        Raduis.AddLine(btn.Width, 20, btn.Width, btn.Height - 10)
+        Raduis.AddArc(New Rectangle(btn.Width - 25, btn.Height - 25, 25, 25), 0, 90)
+        Raduis.AddLine(btn.Width - 10, btn.Width, 20, btn.Height)
+        Raduis.AddArc(New Rectangle(0, btn.Height - 20, 20, 20), 90, 90)
+        Raduis.CloseFigure()
+        btn.Region = New Region(Raduis)
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        RoundButton(Button1)
+    End Sub
+    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        RoundButton2(Button2)
+    End Sub
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Application.Restart()
     End Sub
