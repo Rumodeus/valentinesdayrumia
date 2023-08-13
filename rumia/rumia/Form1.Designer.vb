@@ -70,7 +70,7 @@ Partial Class Form1
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(166, 47)
         Me.Button2.TabIndex = 4
-        Me.Button2.Text = "Restart"
+        Me.Button2.Text = "Clear"
         Me.Button2.UseVisualStyleBackColor = False
         '
         'Form1

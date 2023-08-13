@@ -6,6 +6,7 @@ Imports System.Net.WebRequestMethods
 Imports System.Security.Policy
 
 Public Class Form1
+    Dim counter As New Integer
     Private Function _
         GetImageFromURL(ByVal url As String) As Image
 
@@ -36,10 +37,21 @@ Public Class Form1
     End Function
 
     Dim array() As String = {"https://i.imgur.com/drsBCLg.jpg", "https://i.imgur.com/ctz0zo9.png", "https://i.imgur.com/zBg2jUk.jpeg", "https://i.imgur.com/CiHvMNN.png", "https://i.imgur.com/CiHvMNN.png", "https://i.imgur.com/6muok6u.jpeg", "https://i.imgur.com/bVe8Gfv.png", "https://i.imgur.com/S23m3uI.png", "https://i.imgur.com/Ns8sNCR.jpeg", "https://i.imgur.com/eAeWLGE.jpeg", "https://i.imgur.com/9VrWxnO.jpeg", "https://i.imgur.com/ztKBrCr.jpeg", "https://i.imgur.com/oQEaG8v.jpeg", "https://i.imgur.com/KQxnKJX.png", "https://i.imgur.com/Zajo9wr.jpeg", "https://i.imgur.com/VXBU0t0.jpeg", "https://i.imgur.com/VC4Mrd7.jpeg", "https://i.imgur.com/clS41mk.jpeg", "https://i.imgur.com/BjgsakV.jpeg", "https://i.imgur.com/UhFECGo.png"}
-    Dim randomNumber As New Random
-    Dim url1 As String = (array(randomNumber.Next(0, array.Length)))
-    Dim url2 As String = (array(randomNumber.Next(0, array.Length)))
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        counter = counter + 1
+        If counter = 5 Then
+            Button1.Text = "Fucking Weeb (Click for Rumia)"
+        End If
+        If counter = 10 Then
+            Process.Start("http://www.maerivoet.org/website/links/miscellaneous/speed-seduction-book/resources/speed-seduction-book.pdf")
+        End If
+        If counter = 15 Then
+            MsgBox("go outside please", vbCritical, "No Females have ever touched you")
+            Application.Exit()
+        End If
+        Dim randomNumber As New Random
+        Dim url1 As String = (array(randomNumber.Next(0, array.Length)))
+        Dim url2 As String = (array(randomNumber.Next(0, array.Length)))
         'should this be here????
         ServicePointManager.Expect100Continue = True
         ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12
@@ -106,6 +118,12 @@ Public Class Form1
         RoundButton2(Button2)
     End Sub
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Application.Restart()
+        counter = 0
+        With PictureBox1
+            PictureBox1.Image = Nothing
+        End With
+        With PictureBox2
+            PictureBox2.Image = Nothing
+        End With
     End Sub
 End Class
